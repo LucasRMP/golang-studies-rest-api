@@ -1,0 +1,26 @@
+###
+GET http://localhost:8000/personalities
+
+###
+GET http://localhost:8000/personalities/5
+
+###
+POST http://localhost:8000/personalities
+Content-Type: application/json
+
+{
+  "name": "Lucas Pessone",
+  "biography": "Software Engineer for quite some time"
+}
+
+###
+DELETE http://localhost:8000/personalities/5
+
+###
+PUT http://localhost:8000/personalities/5
+Content-Type: application/json
+
+{
+  "name": "Lucas R. M. Pessone",
+  "biography": "Software Engineer for about 15 years"
+}
